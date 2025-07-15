@@ -126,7 +126,7 @@ const SideNavBar = ({isOpen, setIsOpen}) => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 bg-black/20 bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black/20 bg-opacity-50 z-[10]"
             onClick={toggleSidebar}
           />
         )}
@@ -140,7 +140,7 @@ const SideNavBar = ({isOpen, setIsOpen}) => {
             animate="open"
             exit="closed"
             variants={sidebarVariants}
-            className="fixed top-0 right-0 h-full bg-white z-50 shadow-xl overflow-x-hidden overflow-y-auto "
+            className="fixed top-0 right-0 h-full bg-white z-[100] shadow-xl overflow-x-hidden overflow-y-auto "
             style={{ width: windowWidth > 768 ? '600px' : '100%' }}
           >
             <div className="flex flex-col h-full pt-[7%]  ">

@@ -21,7 +21,7 @@ const FooterSection = () => {
                 </div>
             </div>
             <p className="text-gray-400 mb-6 text-sm">
-              Techtonic Lab a subsidiary of Skillcloud Solutions Pvt. Ltd. offers internships and placements to help 
+              Techtonic Lab offers internships and placements to help 
               students gain real-world experience and bridge the gap 
               between academics and industry.
             </p>

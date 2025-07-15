@@ -77,7 +77,7 @@ const TopCompaniesSection = () => {
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight">
             <span className="text-gray-800">Top </span>
             <span className="text-emerald-500">companies</span>
-            <span className="text-gray-800"> our candidate</span>
+            <span className="text-gray-800"> our students</span>
           </h2>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-800">
             working with

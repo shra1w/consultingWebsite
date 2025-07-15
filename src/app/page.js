@@ -1,3 +1,5 @@
+"use client"
+import { useEffect, useState } from "react";
 import CoursesSection from "./Components/CoursesOffered";
 import FooterSection from "./Components/FooterSection";
 import HeaderSection from "./Components/HeaderSection";
@@ -10,15 +12,23 @@ import ThreeStepSection from "./Components/ThreeStepsSection";
 import TrustedPartners from "./Components/TrustedPartners";
 
 export default function Home() {
-  
-  
+  const [showPage,setShowPage]=useState(true)
+  const [overlayAnimation,setOverLayAnimation]=useState(true)
+  useEffect(()=>{
+    setTimeout(()=>{
+      setOverLayAnimation(false)
+    },5300)
+    setTimeout(()=>{
+      setShowPage(false)
+    },6000)
+  })
   return (
     <>
     <SmoothScroll>
-    <main className=" w-full min-h-screen bg-zinc-950 ">
+   <main className=" w-full min-h-screen bg-zinc-950 ">
 
       <HeaderSection/>
-      <div className=" relative w-full h-[100vh]">
+      <div className=" relative w-full  h-[100vh]">
         <RadialGradientSection/>
       </div>
 
